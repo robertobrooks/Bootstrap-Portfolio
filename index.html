@@ -1,38 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Coding Bootcamp!</title>
-  <!-- We link our html to the Bootstrap CDN -->
-  <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>About Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="back">
 
-<div class="container responsive">
-
-<ul class="nav nav-pills">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages</a></li>
-</ul>
+<nav class="container-fluid white">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand name" href="index.html">
+      Rob Brooks</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="menu" href="index.html">About</a></li>
+        <li><a class="menu" href="portfolio.html">Portfolio</a></li>
+        <li><a class="menu" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
+<div class="back row container-fluid">
 
-<div class="panel-group col-md-8">
-  <div class="panel panel-default">
-    <div class="panel-body">About Me</div>
+    <div class="col-xs-6 whiteblock"><h4 class="title">About Me</h4>
+    <img class="profile" src="rob.JPG" alt="rob">
+    <p>I am an engineer with over four years of experience in database and software development, design, and implementation. Proficient in Tableau, SQL Oracle, Microsoft SQL Server, MySQL, Microsoft SharePoint, SAP Business Objects, SSRS, data modeling, and report writing.</p>
+    <p> Actively involved in designing and developing real-time projects/enterprise applications, starting from the requirements analysis/design stages and through the whole Software Development Life Cycle.</p>
   </div>
-</div>
-<div class="panel-group col-md-4">
-  <div class="panel panel-default">
-    <div class="panel-body">Connect with Me</div>
-  </div>
+
+    <div class="col-xs-4 whiteblock"><h4 class="title">Connect With Me</h4>
+  <a href="https://github.com/robertobrooks"><img class="social" src="github.png" alt="github"></a>
+  <a  href="https://linkedin.com/in/robjbrooks"><img class="social" src="linkedin.png" alt="linkedin"></a>
+  <a  href="https://stackexchange.com/users/10717099/rbrux"><img class="stack" src="stackoverflow.png" alt="stackoverflow"></a>
+    </div>
+
 </div>
 
+<div class="container-fluid footer">
+Copyright 2017 - Roberto Brooks
 </div>
 
 </body>
 </html>
-
 
